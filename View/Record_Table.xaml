@@ -1,0 +1,55 @@
+﻿<Page x:Class="FinalDbProject.Record_Table"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalDbProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Record_Table" WindowTitle="Record_Table" SizeChanged="window_SizeChanged" Name="window" Loaded="Page_Loaded" ShowsNavigationUI="False">
+
+    <FlowDocument FlowDirection="LeftToRight" FontSize="25" TextAlignment="Justify" Name="FlowDoc">
+        <Table x:Name="my_table_record">
+            <Table.Columns>
+                <TableColumn/>
+                <TableColumn/>
+                <TableColumn/>
+            </Table.Columns>
+            <TableRowGroup>
+                <TableRow FontFamily="Comic Sans MS">
+                    <TableCell>
+                        <Paragraph>Place</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>UserName</Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph>Time</Paragraph>
+                    </TableCell>
+                </TableRow>
+            </TableRowGroup>
+        </Table>
+        <Table FlowDirection="RightToLeft">
+            <Table.Columns>
+                <TableColumn/>
+                <TableColumn/>
+            </Table.Columns>
+            <TableRowGroup>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>
+                            <Hyperlink FontFamily="Comic Sans MS" Foreground="DarkGray" TextDecorations="" Click="Hyperlink_Click">
+                                Return To Home
+                            </Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell FlowDirection="LeftToRight">
+                        <Paragraph FontFamily="Comic Sans MS" Name="score_p">
+                            My Score is:
+                        </Paragraph>
+                    </TableCell>
+                </TableRow>
+            </TableRowGroup>
+        </Table>
+    </FlowDocument>
+</Page>

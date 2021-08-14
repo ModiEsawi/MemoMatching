@@ -1,0 +1,38 @@
+﻿<Page x:Class="FinalDbProject.PlayerResult"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalDbProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="550"
+      Title="PlayerResult">
+
+    <Grid Name="MainGrid">
+        <Viewbox StretchDirection="Both" Stretch="Uniform">
+            <Grid Name ="ResultGrid" Height="450" Width="550">
+                <Grid HorizontalAlignment="Left" Width="550" ShowGridLines="True" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
+                <Label FontSize="20" Foreground="#FF7D7112"  Grid.Column="0" Grid.Row = "0" Grid.ColumnSpan="5" FontFamily="Kristen ITC" FontWeight="Bold" Margin="20,0,-20,0">You Have Matched All The Cards - Well done!</Label>
+                <Label FontSize="20" Foreground="#FF258973"  Grid.Column="1" Grid.ColumnSpan="3" FontFamily="Kristen ITC" FontWeight="Bold" Margin="34,48,76,42" Grid.RowSpan="2">Your Time is :</Label>
+                <TextBlock Name="SolvingTime" HorizontalAlignment="Left" FontFamily="Kristen ITC" FontSize="20" Foreground="#FF258973" Grid.Column="3" FontWeight="Bold" Margin="0,52,0,38" Grid.RowSpan="2"/>
+                <Button Grid.Row ="4" Grid.Column="1" Content="Leaders Board" Click="LeaderBoard_Button" Margin="0,9,10,26"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Page>

@@ -1,0 +1,22 @@
+﻿<Page x:Class="FinalDbProject.MainWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalDbProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainWindow"
+      Name="window"
+      ShowsNavigationUI="False">
+    <Grid Name="MainGrid">
+        <Viewbox StretchDirection="Both" Stretch="Uniform">
+            <Grid Height="450" Width="800">
+            <Label Content="Memomatching Game" HorizontalAlignment="Left" Margin="147,10,0,0" VerticalAlignment="Top" Foreground="#FF703232" FontSize="48" FontFamily="Jokerman" FontWeight="Bold"/>
+            <Label Content="Hello Guest" HorizontalAlignment="Left" Margin="712,10,-2,0" VerticalAlignment="Top" FontSize="14" Foreground="#FF0F3E3D" FontFamily="Segoe UI Black"/>
+            <Button Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="338,144,0,0" VerticalAlignment="Top" Width="140" Height="56" Background="#FF37DEA6" Foreground="#FF7410B1" FontWeight="Bold" FontSize="22" FontFamily="Comic Sans MS" Click="ButtonLogin_Click"/>
+            <Button Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="338,246,0,0" VerticalAlignment="Top" Width="140" Height="56" Background="#FF37DEA6" Foreground="#FF7410B1" FontWeight="Bold" FontSize="22" FontFamily="Comic Sans MS" Click="ButtonRegister_Click"/>
+        </Grid>
+    </Viewbox>
+    </Grid>
+</Page>

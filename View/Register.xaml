@@ -1,0 +1,30 @@
+﻿<Page x:Class="FinalDbProject.Register"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalDbProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Register"
+      ShowsNavigationUI="False">
+
+    <Grid Name="MainGrid">
+        <Viewbox StretchDirection="Both" Stretch="Uniform">
+            <Grid Height="450" Width="800">
+                <Label Content="Register" HorizontalAlignment="Left" Margin="266,10,0,0" VerticalAlignment="Top" Foreground="#FF1C8E45" FontSize="48" FontFamily="Ravie"/>
+                <Label Name="LabelUsernameTitle" Content="Username:" HorizontalAlignment="Left" Margin="66,131,0,0" VerticalAlignment="Top" FontSize="22" Foreground="#FF44C3DB" FontWeight="Bold" Background="#FFA81F4D"/>
+                <Label Name="LabelPasswordTitle" Content="Password:" HorizontalAlignment="Left" Margin="66,244,0,0" VerticalAlignment="Top" FontSize="22" Foreground="#FF44C3DB" FontWeight="Bold" Background="#FFA81F4D"/>
+                <TextBox Name="TextBoxUsernameInput" MaxLength="15" HorizontalAlignment="Left" Height="28" Margin="208,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133"/>
+                <TextBox x:Name="TextBoxNameInput" MaxLength="15" HorizontalAlignment="Left" Height="28" Margin="208,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133"/>
+                <PasswordBox Name="TextBoxPasswordInput" MaxLength="15" HorizontalAlignment="Left" Height="28" Margin="208,255,0,0" VerticalAlignment="Top" Width="133"/>
+                <Button Name="ButtonRegister" Content="Register" HorizontalAlignment="Left" Margin="573,298,0,0" VerticalAlignment="Top" Width="87" Height="29" Click="ButtonRegister_Click"/>
+                <Label Name="LabelUsernameErrorMessage" Content="" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="386,141,0,0" VerticalAlignment="Top" Width="239" Height="29" Foreground="#FFC1681C" FontWeight="Bold"/>
+                <Label Name="LabelNameErrorMessage" Content="" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="386,197,0,0" VerticalAlignment="Top" Width="239" Height="29" Foreground="#FFC1681C" FontWeight="Bold"/>
+                <Label x:Name="LabelNameTitle" Content="Name:" HorizontalAlignment="Left" Margin="66,188,0,0" VerticalAlignment="Top" FontSize="22" Foreground="#FF44C3DB" FontWeight="Bold" Background="#FFA81F4D"/>
+                <Label x:Name="LabelPasswordErrorMessage" Content="" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="386,255,0,0" VerticalAlignment="Top" Width="239" Height="29" Foreground="#FFC1681C" FontWeight="Bold"/>
+                <Button Name="ButtonBack" Content="Back" HorizontalAlignment="Left" Margin="23,20,0,0" VerticalAlignment="Top" Width="75" Click="ButtonBack_Click"/>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Page>

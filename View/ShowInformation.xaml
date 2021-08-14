@@ -1,0 +1,54 @@
+﻿<Page x:Class="FinalDbProject.ShowInformation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FinalDbProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ShowInformation" Loaded="Page_Loaded" Name="window" SizeChanged="window_SizeChanged">
+    
+    <FlowDocument FlowDirection="LeftToRight" FontSize="25" TextAlignment="Justify" Name="FlowDoc" Foreground="White">
+        <Table FlowDirection="RightToLeft">
+            <Table.Columns>
+                <TableColumn/>
+                <TableColumn/>
+            </Table.Columns>
+            <TableRowGroup>
+                <TableRow>
+                    <TableCell>
+                        <Paragraph>
+                            <Hyperlink FontFamily="Comic Sans MS" Foreground="#FFD05D1A" TextDecorations="" Click="Button_Click_1">
+                                Show Information
+                            </Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                    <TableCell FlowDirection="LeftToRight">
+                        <Paragraph FontFamily="Comic Sans MS">
+                            <Hyperlink FontFamily="Comic Sans MS" Foreground="#FFD05D1A" TextDecorations="" Click="Go_Back_Click">
+                                Go Back
+                            </Hyperlink>
+                        </Paragraph>
+                    </TableCell>
+                </TableRow>
+            </TableRowGroup>
+        </Table>
+        <Table x:Name="my_information_table">
+            <Table.Columns>
+                <TableColumn/>
+                <TableColumn/>
+                <TableColumn/>
+            </Table.Columns>
+            <TableRowGroup>
+                <TableRow FontFamily="Comic Sans MS">
+                    <TableCell>
+                        <Paragraph Name="title1"></Paragraph>
+                    </TableCell>
+                    <TableCell>
+                        <Paragraph Name="title2"></Paragraph>
+                    </TableCell>
+                </TableRow>
+            </TableRowGroup>
+        </Table>
+    </FlowDocument>
+</Page>
